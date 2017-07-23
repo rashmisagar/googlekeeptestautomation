@@ -29,4 +29,6 @@ Below are the steps to execute the testNG.xml file from an IDE or from terminal.
 	
   b. cd ProjectDirectory 
 	
-  c. java -cp ProjectDirectory\lib\*;ProjectDirectory\bin org.testng.TestNG testng.xml
+  c. Run command
+     
+     mvn clean test -DsuiteXmlFile=testng.xml

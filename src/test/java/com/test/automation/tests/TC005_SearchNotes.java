@@ -1,21 +1,22 @@
 package com.test.automation.tests;
 
 import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
+
 import static org.junit.Assert.assertEquals;
 
 
 public class TC005_SearchNotes extends BaseTest{
 
-    public String noteTitle = "test";
-
 
     @Test
     public void searchExistingNote() throws InterruptedException {
 
-        homePage.searchNoteTitle(noteTitle);
+        homePage.searchNoteTitle("test");
+        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
         homePage.verifySearchResults();
-        if(homePage.verifySearchResults())
-            assertEquals(true, homePage.getFirstSearchNoteTitle().contains(noteTitle));
+        assertEquals(true, homePage.getFirstSearchNoteTitle().contains("test"));
     }
 
     @Test
@@ -24,7 +25,7 @@ public class TC005_SearchNotes extends BaseTest{
         homePage.searchNoteTitle("teerewrw");
         homePage.verifySearchResults();
         if(!homePage.verifySearchResults())
-            assertEquals(true, homePage.noSearchResults().contains("No matching results"));
+            assertEquals(true, isTextPresent("No matching results"));
     }
 }
 

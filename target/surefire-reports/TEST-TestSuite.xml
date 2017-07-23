@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="0" failures="0" name="TestSuite" time="0" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="80.504" tests="6" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
@@ -22,10 +22,10 @@
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.io.tmpdir" value="/var/folders/jg/ghb0qvdd2zn75yhy0_vc2xwr0000gn/T/"/>
-    <property name="line.separator" value="
-"/>
+    <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
+    <property name="suiteXmlFile" value="testng.xml"/>
     <property name="classworlds.conf" value="/usr/local/apache-maven/apache-maven-3.5.0/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/rashmisagarsen/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -DsuiteXmlFile=testng.xml"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -64,4 +64,99 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
+  <testcase name="verifyLoginWithValidCredentials" classname="com.test.automation.tests.TC001_VerifyHomePageDetails" time="5.515"/>
+  <testcase name="createANewNote" classname="com.test.automation.tests.TC002_CreateANote" time="6.24"/>
+  <testcase name="createANewReminder" classname="com.test.automation.tests.TC003_AddReminder" time="10.706"/>
+  <testcase name="createANewLabel" classname="com.test.automation.tests.TC004_CreateALabel" time="9.082"/>
+  <testcase name="searchExistingNote" classname="com.test.automation.tests.TC005_SearchNotes" time="5.27">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at com.test.automation.tests.TC005_SearchNotes.searchExistingNote(TC005_SearchNotes.java:18)
+]]></failure>
+    <system-err><![CDATA[[warn] kq_init: detected broken kqueue; not using.: Undefined error: 0
+1500846022614	addons.manager	DEBUG	Application has been upgraded
+1500846022635	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: ["XPIProvider"]
+1500846022639	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: ["LightweightThemeManager"]
+1500846022642	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/GMPProvider.jsm
+1500846022644	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/PluginProvider.jsm
+1500846022645	addons.manager	DEBUG	Starting provider: XPIProvider
+1500846022647	addons.xpi	DEBUG	startup
+1500846022648	addons.xpi	INFO	Mapping fxdriver@googlecode.com to /var/folders/jg/ghb0qvdd2zn75yhy0_vc2xwr0000gn/T/anonymous5303516015653888417webdriver-profile/extensions/fxdriver@googlecode.com
+1500846022649	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: /var/folders/jg/ghb0qvdd2zn75yhy0_vc2xwr0000gn/T/anonymous5303516015653888417webdriver-profile/extensions/webdriver-staging
+1500846022650	addons.xpi	INFO	SystemAddonInstallLocation directory is missing
+1500846022650	addons.xpi	INFO	Mapping loop@mozilla.org to /Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi
+1500846022651	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to /Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1500846022651	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1500846022652	addons.xpi	DEBUG	checkForChanges
+1500846022653	addons.xpi	DEBUG	Loaded add-on state from prefs: {}
+1500846022653	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com in app-profile
+1500846022653	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1500846022656	addons.xpi	DEBUG	New add-on loop@mozilla.org in app-system-defaults
+1500846022656	addons.xpi	DEBUG	getModTime: Recursive scan of loop@mozilla.org
+1500846022657	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1500846022657	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1500846022658	addons.xpi	DEBUG	getInstallState changed: true, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/var/folders/jg/ghb0qvdd2zn75yhy0_vc2xwr0000gn/T/anonymous5303516015653888417webdriver-profile/extensions/fxdriver@googlecode.com","st":1500846022000,"mt":1500846022000}},"app-system-defaults":{"loop@mozilla.org":{"d":"/Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi","st":1457054449000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","st":1457054449000}}}
+1500846022669	addons.xpi-utils	DEBUG	Opening XPI database /var/folders/jg/ghb0qvdd2zn75yhy0_vc2xwr0000gn/T/anonymous5303516015653888417webdriver-profile/extensions.json
+1500846022670	addons.xpi-utils	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1500846022688	DeferredSave.extensions.json	DEBUG	Save changes
+1500846022688	addons.xpi-utils	DEBUG	New add-on loop@mozilla.org installed in app-system-defaults
+1500846022695	DeferredSave.extensions.json	DEBUG	Starting timer
+1500846022696	DeferredSave.extensions.json	DEBUG	Save changes
+1500846022698	addons.xpi-utils	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
+1500846022703	DeferredSave.extensions.json	DEBUG	Save changes
+1500846022703	addons.xpi-utils	INFO	Hiding the updated system add-ons.
+1500846022704	addons.manager	DEBUG	Registering startup change 'installed' for fxdriver@googlecode.com
+1500846022704	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1500846022704	DeferredSave.extensions.json	DEBUG	Save changes
+1500846022716	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi
+1500846022735	addons.xpi	DEBUG	Calling bootstrap method install on loop@mozilla.org version 0.1
+1500846022735	addons.xpi-utils	DEBUG	Make addon app-system-defaults:loop@mozilla.org visible
+1500846022736	DeferredSave.extensions.json	DEBUG	Save changes
+1500846022737	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1500846022737	DeferredSave.extensions.json	DEBUG	Save changes
+1500846022738	addons.xpi	DEBUG	Updating XPIState for {"id":"fxdriver@googlecode.com","syncGUID":"2ftpASRMlKpR","location":"app-profile","version":"3.4.0","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Firefox WebDriver","description":"WebDriver implementation for Firefox","creator":"Simon Stewart","homepageURL":null},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"/var/folders/jg/ghb0qvdd2zn75yhy0_vc2xwr0000gn/T/anonymous5303516015653888417webdriver-profile/extensions/fxdriver@googlecode.com","installDate":1500846022000,"updateDate":1500846022000,"applyBackgroundUpdates":1,"bootstrap":false,"skinnable":false,"size":3303362,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":true,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"3.0","maxVersion":"48.0"}],"targetPlatforms":[{"os":"Darwin","abi":null},{"os":"SunOS","abi":null},{"os":"FreeBSD","abi":null},{"os":"OpenBSD","abi":null},{"os":"WINNT","abi":null},{"os":"Linux","abi":null}],"multiprocessCompatible":false,"signedState":0,"seen":true}
+1500846022738	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1500846022744	addons.xpi	DEBUG	Updating XPIState for {"id":"loop@mozilla.org","syncGUID":"uKaaZpccmz4q","location":"app-system-defaults","version":"0.1","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Firefox Hello Beta","description":"Web sharing for Firefox","creator":"Mozilla","homepageURL":null},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"/Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi","installDate":1457054449000,"updateDate":1457054449000,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":3086111,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"45.0a1","maxVersion":"45.0"},{"id":"xpcshell@tests.mozilla.org","minVersion":"0","maxVersion":"10"}],"targetPlatforms":[],"multiprocessCompatible":false,"seen":true}
+1500846022745	addons.xpi	DEBUG	getModTime: Recursive scan of loop@mozilla.org
+1500846022746	addons.xpi	DEBUG	Updating XPIState for {"id":"{972ce4c6-7e08-4474-a285-3208198ce6fd}","syncGUID":"TTOHesUI1s64","location":"app-global","version":"45.0","type":"theme","internalName":"classic/1.0","updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{"32":"icon.png","48":"icon.png"},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Default","description":"The default theme.","creator":"Mozilla","homepageURL":null,"contributors":["Mozilla Contributors"]},"visible":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","installDate":1457054449000,"updateDate":1457054449000,"applyBackgroundUpdates":1,"skinnable":true,"size":7134,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"45.0","maxVersion":"45.0"}],"targetPlatforms":[],"seen":true}
+1500846022746	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1500846022750	DeferredSave.extensions.json	DEBUG	Save changes
+1500846022750	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1500846022751	addons.xpi-utils	DEBUG	Updating add-on states
+1500846022752	addons.xpi-utils	DEBUG	Writing add-ons list
+1500846022754	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi
+1500846022754	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 0.1
+1500846022771	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1500846022771	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1500846022772	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1500846022800	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1500846022802	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1500846022802	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1500846022802	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1500846022802	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1500846022805	addons.manager	DEBUG	Starting provider: GMPProvider
+1500846022815	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1500846022815	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1500846022815	addons.manager	DEBUG	Starting provider: PluginProvider
+1500846022815	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1500846022816	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1500846022816	addons.manager	DEBUG	Completed startup sequence
+1500846023160	DeferredSave.extensions.json	DEBUG	Starting write
+1500846023270	addons.repository	DEBUG	No addons.json found.
+1500846023270	DeferredSave.addons.json	DEBUG	Save changes
+1500846023273	DeferredSave.addons.json	DEBUG	Starting timer
+1500846023302	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1500846023303	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1500846023303	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1500846023309	DeferredSave.extensions.json	DEBUG	Write succeeded
+1500846023309	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1500846023327	DeferredSave.addons.json	DEBUG	Starting write
+1500846023340	DeferredSave.addons.json	DEBUG	Write succeeded
+Jul 23, 2017 10:40:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+JavaScript warning: https://accounts.google.com/ServiceLogin?passive=1209600&continue=https://keep.google.com/&followup=https://keep.google.com/&ltmpl=keep, line 288: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+JavaScript warning: https://www.gstatic.com/notes/_/js/k=notes.n_ink.en.Lr0s-11HQkQ.O/m=n_glcore/rt=j/d=1/rs=AMdsDvBQ6FpL2bT_eSl4Ec-OVbuM4UQoQA, line 6055: SyntaxError: "use asm" is only meaningful in the Directive Prologue of a function body
+]]></system-err>
+  </testcase>
+  <testcase name="searchNonExistingNote" classname="com.test.automation.tests.TC005_SearchNotes" time="0.31"/>
 </testsuite>

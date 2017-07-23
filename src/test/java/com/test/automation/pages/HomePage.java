@@ -160,7 +160,7 @@ public class HomePage extends TestBase {
         }
 
     public String getFirstSearchNoteTitle(){
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.notranslate.IZ65Hb-YPqjbf.h1U9Be-YPqjbf.rTEl-SX9D7d-Y5a8lc")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("G0jgYd-sn54Q")));
         return notesTitle.getText();
     }
 
