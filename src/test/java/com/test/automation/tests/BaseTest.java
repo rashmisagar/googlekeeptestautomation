@@ -45,7 +45,7 @@ public class BaseTest extends TestBase{
 
     @AfterClass
     public void endTest(){
-       // closeBrowser();
+        closeBrowser();
     }
 }
 

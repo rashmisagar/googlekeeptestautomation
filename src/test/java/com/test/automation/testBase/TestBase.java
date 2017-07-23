@@ -10,8 +10,6 @@ import java.util.concurrent.TimeUnit;
 public class TestBase {
 
     public static WebDriver driver;
-    //String url = "https://keep.google.com";
-    //String browser = "firefox";
 
     public WebDriver getDriver() {
 

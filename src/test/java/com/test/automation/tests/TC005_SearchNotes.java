@@ -1,12 +1,8 @@
 package com.test.automation.tests;
 
 import org.testng.annotations.Test;
-import org.junit.Assert;
-
-import java.util.concurrent.TimeUnit;
-
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+
 
 public class TC005_SearchNotes extends BaseTest{
 
