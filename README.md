@@ -1,6 +1,6 @@
 # googlekeeptestautomation
 
-Test Automation framework to automation basic functionalities of "https://keep.google.com/"
+Test Automation framework that runs tests on basic functionalities of "https://keep.google.com/"
 
 Prerequisites - 
 
