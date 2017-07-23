@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Google Keep Test Suite">
+
+    <test name="FirefoxTest" >
+        <classes>
+
+            <class name="com.test.automation.tests.TC001_VerifyHomePageDetails"></class>
+            <class name="com.test.automation.tests.TC002_CreateANote"></class>
+            <class name="com.test.automation.tests.TC003_AddReminder"></class>
+            <class name="com.test.automation.tests.TC004_CreateALabel"></class>
+            <class name="com.test.automation.tests.TC005_SearchNotes"></class>
+
+        </classes>
+    </test>
+
+</suite>
